@@ -46,13 +46,14 @@ jobs:
         uses: actions/setup-go@v6
         with:
           go-version: ${{ env.GO_VERSION }}
-          cache: false
+          cache: true
 
       - name: Install Node.js
         if: hashFiles('package-lock.json') != ''
         uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
 
       - name: Install Dart Sass
         run: |
@@ -108,8 +109,9 @@ jobs:
         uses: actions/cache/restore@v5
         with:
           path: ${{ runner.temp }}/hugo_cache
-          key: hugo-${{ github.run_id }}
-          restore-keys: hugo-
+          key: hugo-${{ hashFiles('**/go.sum', '**/package-lock.json') }}
+          restore-keys: |
+            hugo-
 
       - name: Build
         run: |
@@ -121,10 +123,11 @@ jobs:
             --cacheDir "${{ runner.temp }}/hugo_cache"
 
       - name: Cache save
+        if: steps.cache-restore.outputs.cache-hit != 'true'
         uses: actions/cache/save@v5
         with:
           path: ${{ runner.temp }}/hugo_cache
-          key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+          key: hugo-${{ hashFiles('**/go.sum', '**/package-lock.json') }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
