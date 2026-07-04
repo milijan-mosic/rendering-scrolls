@@ -17,8 +17,7 @@ hugo server -D
 
 ## To do
 
-Host this website on github pages
-Add custom domain
-
-Add email copy style
-Fix RSS
+- Host this website on github pages
+- Add custom domain
+- Add email copy style
+- Fix RSS
