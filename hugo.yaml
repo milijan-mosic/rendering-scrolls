@@ -19,6 +19,10 @@ outputs:
     - RSS
     - JSON
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 params:
   env: production
   title: Scrolls of the ancient warlock
