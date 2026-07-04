@@ -1,0 +1,154 @@
+baseURL: https://blog.milijan-mosic.dev/
+locale: en-us
+title: Scrolls of the ancient warlock
+theme: PaperMod
+
+paginate: 12
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: Scrolls of the ancient warlock
+  description: "Personal blog of Milijan Mosić"
+  keywords: [Blog, Portfolio]
+  author: Milijan Mosić
+  images: ["/images/card.jpg"]
+  DateFormat: "2 Jan 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
+
+  ShowFullTextinRSS: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hideMeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+  enableEmoji: true
+
+  ShowShareButtons: true
+  ShareButtons: ["linkedin", "x", "reddit", "facebook", "whatsapp", "telegram", "email"]
+
+  assets:
+    disableHLJS: false
+    disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+  label:
+    text: "Scrolls of an ancient warlock"
+    icon: /apple-touch-icon.png
+    iconHeight: 36
+
+  profileMode:
+    enabled: true
+    title: Milijan Mosić
+    subtitle: "Software Engineer"
+    imageUrl: "/images/me.jpg"
+    imageTitle: Milijan Mosić
+    imageWidth: 256
+    imageHeight: 256
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+      - name: Search
+        url: search
+  socialIcons:
+    - name: rss
+      url: "https://blog.milijan-mosic.dev/index.xml"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/milijan-mosic/"
+    - name: cv
+      url: "https://milijan-mosic.dev/"
+    - name: github
+      url: "https://github.com/milijan-mosic/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "G-E81PN19G55"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+    responsiveImages: true
+    linkFullImages: true
+
+  editPost:
+    URL: "https://github.com/milijan-mosic/rendering-scrolls/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 12
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name:  Search
+      url: /search/
+      weight: 30
+    - identifier: rss
+      name: RSS
+      url: "https://blog.milijan-mosic.dev/index.xml"
+      weight: 40
+    - identifier: linkedin
+      name: LinkedIn
+      url: "https://www.linkedin.com/in/milijan-mosic/"
+      weight: 50
+    - identifier: portfolio
+      name: Portfolio
+      url: "https://milijan-mosic.dev/"
+      weight: 60
+    - identifier: github
+      name: GitHub
+      url: "https://github.com/milijan-mosic/"
+      weight: 70
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: catppuccin-mocha

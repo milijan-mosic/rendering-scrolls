@@ -1,0 +1,24 @@
+# Hugo build output
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Hugo cache
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.idea/
+.vscode/
+
+# Node (if using npm/postcss/tailwind)
+node_modules/
+package-lock.json
+
+# Env files
+.env
+.env.local
