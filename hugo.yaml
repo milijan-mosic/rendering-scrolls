@@ -1,6 +1,6 @@
 baseURL: "https://blog.milijan-mosic.dev/"
 locale: "en-us"
-title: "Scrolls of the ancient warlock"
+title: "Blog - Milijan Mosić"
 theme: "PaperMod"
 
 paginate: 12
@@ -25,7 +25,7 @@ caches:
 
 params:
   env: "production"
-  title: "Scrolls of the ancient warlock"
+  title: "Blog - Milijan Mosić"
   description: "Personal blog of Milijan Mosić"
   keywords: ["Blog", "Portfolio"]
   author: "Milijan Mosić"
@@ -63,7 +63,7 @@ params:
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
   label:
-    text: "Scrolls of an ancient warlock"
+    text: "Milijan Mosić"
     icon: "/apple-touch-icon.png"
     iconHeight: 36
 
@@ -92,9 +92,9 @@ params:
     - name: github
       url: "https://github.com/milijan-mosic/"
 
-  analytics:
-    google:
-      SiteVerificationTag: "G-E81PN19G55"
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "G-E81PN19G55"
 
   cover:
     hidden: false
@@ -131,22 +131,22 @@ menu:
       name: "Search"
       url: /search/
       weight: 30
-    # - identifier: rss
-    #   name: "RSS"
-    #   url: "https://blog.milijan-mosic.dev/posts/index.xml"
-    #   weight: 40
-    # - identifier: linkedin
-    #   name: "LinkedIn"
-    #   url: "https://www.linkedin.com/in/milijan-mosic/"
-    #   weight: 50
-    # - identifier: portfolio
-    #   name: "Portfolio"
-    #   url: "https://milijan-mosic.dev/"
-    #   weight: 60
-    # - identifier: github
-    #   name: "GitHub"
-    #   url: "https://github.com/milijan-mosic/"
-    #   weight: 70
+    - identifier: rss
+      name: "RSS"
+      url: "https://blog.milijan-mosic.dev/posts/index.xml"
+      weight: 40
+    - identifier: linkedin
+      name: "LinkedIn"
+      url: "https://www.linkedin.com/in/milijan-mosic/"
+      weight: 50
+    - identifier: portfolio
+      name: "Portfolio"
+      url: "https://milijan-mosic.dev/"
+      weight: 60
+    - identifier: github
+      name: "GitHub"
+      url: "https://github.com/milijan-mosic/"
+      weight: 70
 pygmentsUseClasses: true
 markup:
   highlight:
