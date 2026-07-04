@@ -1,7 +1,7 @@
-baseURL: https://blog.milijan-mosic.dev/
-locale: en-us
-title: Scrolls of the ancient warlock
-theme: PaperMod
+baseURL: "https://blog.milijan-mosic.dev/"
+locale: "en-us"
+title: "Scrolls of the ancient warlock"
+theme: "PaperMod"
 
 paginate: 12
 
@@ -15,23 +15,23 @@ minify:
 
 outputs:
   home:
-    - HTML
-    - RSS
-    - JSON
+    - "HTML"
+    - "RSS"
+    - "JSON"
 
 caches:
   images:
-    dir: :cacheDir/images
+    dir: ":cacheDir/images"
 
 params:
-  env: production
-  title: Scrolls of the ancient warlock
+  env: "production"
+  title: "Scrolls of the ancient warlock"
   description: "Personal blog of Milijan Mosić"
-  keywords: [Blog, Portfolio]
-  author: Milijan Mosić
+  keywords: ["Blog", "Portfolio"]
+  author: "Milijan Mosić"
   images: ["/images/card.jpg"]
   DateFormat: "2 Jan 2006"
-  defaultTheme: dark
+  defaultTheme: "dark"
   disableThemeToggle: false
 
   ShowFullTextinRSS: true
@@ -64,27 +64,27 @@ params:
     safari_pinned_tab: "/safari-pinned-tab.svg"
   label:
     text: "Scrolls of an ancient warlock"
-    icon: /apple-touch-icon.png
+    icon: "/apple-touch-icon.png"
     iconHeight: 36
 
   profileMode:
     enabled: true
-    title: Milijan Mosić
+    title: "Milijan Mosić"
     subtitle: "Software Engineer"
     imageUrl: "/images/me.jpg"
-    imageTitle: Milijan Mosić
+    imageTitle: "Milijan Mosić"
     imageWidth: 256
     imageHeight: 256
     buttons:
-      - name: Posts
+      - name: "Posts"
         url: posts
-      - name: Tags
+      - name: "Tags"
         url: tags
-      - name: Search
+      - name: "Search"
         url: search
   socialIcons:
     - name: rss
-      url: "https://blog.milijan-mosic.dev/index.xml"
+      url: "https://blog.milijan-mosic.dev/posts/index.xml"
     - name: linkedin
       url: "https://www.linkedin.com/in/milijan-mosic/"
     - name: cv
@@ -120,31 +120,31 @@ params:
 menu:
   main:
     - identifier: posts
-      name: Posts
+      name: "Posts"
       url: /posts/
       weight: 10
     - identifier: tags
-      name: Tags
+      name: "Tags"
       url: /tags/
       weight: 20
     - identifier: search
-      name:  Search
+      name: " Search"
       url: /search/
       weight: 30
     - identifier: rss
-      name: RSS
-      url: "https://blog.milijan-mosic.dev/index.xml"
+      name: "RSS"
+      url: "https://blog.milijan-mosic.dev/posts/index.xml"
       weight: 40
     - identifier: linkedin
-      name: LinkedIn
+      name: "LinkedIn"
       url: "https://www.linkedin.com/in/milijan-mosic/"
       weight: 50
     - identifier: portfolio
-      name: Portfolio
+      name: "Portfolio"
       url: "https://milijan-mosic.dev/"
       weight: 60
     - identifier: github
-      name: GitHub
+      name: "GitHub"
       url: "https://github.com/milijan-mosic/"
       weight: 70
 pygmentsUseClasses: true
@@ -155,4 +155,4 @@ markup:
     codeFences: true
     guessSyntax: true
     lineNos: true
-    style: catppuccin-mocha
+    style: "catppuccin-mocha"
