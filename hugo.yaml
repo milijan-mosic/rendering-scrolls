@@ -29,7 +29,7 @@ params:
   description: "Personal blog of Milijan Mosić"
   keywords: ["Blog", "Portfolio"]
   author: "Milijan Mosić"
-  images: ["/images/card.jpg"]
+  images: ["/images/card.png"]
   DateFormat: "2 Jan 2006"
   defaultTheme: "dark"
   disableThemeToggle: false
